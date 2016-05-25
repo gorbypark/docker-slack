@@ -1,5 +1,5 @@
 # docker-slack
-A small bash script that will monitor docker logs and push events to slack.
+A small bash script that will monitor docker logs and push events to a slack incoming webhook.
 Minimal dependencies (curl, sed, grep, less) allow it to run on most hosts without the need for additional packages to be installed.  All credit goes to [this blog post](http://blog.getpostman.com/2015/12/23/stream-any-log-file-to-slack-using-curl/) as this is just a slight modification to use the "docker logs" command instead of reading from a file, as well as less +F instead of tail.
 
 **Usage:**
