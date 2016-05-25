@@ -6,15 +6,15 @@ Minimal dependencies (curl, sed, grep, less) allow it to run on most hosts witho
 
 > docker-slack.sh "docker-instance" "slack-webhook-url" "optional-search-term"
 
-**Example:**
+**Examples:**
 
 pushes all events from a docker instance named nginx:
 
->nohup docker-slack.sh "nginx" "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX"
+>docker-slack.sh "nginx" "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX"
 
 pushes all 404 errors from a docker instance named nginx:
 
->nohup docker-slack.sh "nginx" "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX" " 404 "
+>docker-slack.sh "nginx" "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX" " 404 "
 
 **Notes:**
 
