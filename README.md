@@ -6,10 +6,14 @@ Minimal dependencies (curl, sed, grep, less) allow it to run on most hosts witho
 
 > docker-slack.sh "docker-instance" "slack-webhook-url" "optional-search-term"
 
-**Example:** (pushes all 404 errors from a docker instance named nginx):
+**Example:**
 
->docker-slack.sh "nginx" "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX" " 404 "
+>pushes all events from a docker instance named nginx:
+>nohup docker-slack.sh "nginx" "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX"
 
-**Customization:**
+>pushes all 404 errors from a docker instance named nginx:
+>nohup docker-slack.sh "nginx" "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX" " 404 "
 
-The bot is named Docker Logbot by default.  You can name it anything you'd like by editing the bash script.
+**Notes:**
+
+Use a command like nohup to keep it running after you log out.  The bot is named Docker Logbot by default.  You can name it anything you'd like by editing the bash script.
